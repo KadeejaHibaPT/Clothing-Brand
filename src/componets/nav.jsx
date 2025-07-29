@@ -7,18 +7,18 @@ function Nav() {
     return (
         <>
         <div className="navbar flex justify-between items-center bg-base-100 shadow-lg rounded-lg p-4 mb-4  py-2">
-  <ul className="flex items-center gap-x-6">
-    <h1 className="text-3xl font-bold text-primary">Lunara</h1>
-    <li className="nav-item dropdown active">
-      <a
-        className="nav-link dropdown-toggle"
-        href="#"
-        role="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        HOME
-      </a>
+      <ul className="flex items-center gap-x-6">
+        <h1 className="text-3xl font-bold text-primary">Lunara</h1>
+        <li className="nav-item dropdown active">
+          <a
+            className="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            HOME
+          </a>  
       <ul className="dropdown-menu">
         <li><a className="dropdown-item" href="#">ABOUT</a></li>
         <li><a className="dropdown-item" href="#">HELP</a></li>
@@ -82,6 +82,13 @@ function Nav() {
     <li>CONTACT</li>
     <li>SERVICES</li>
   </ul>
+  <div className="flex items-center gap-x-4">
+    <button className="btn btn-primary" onClick={() => setCount(count + 1)}>
+      Cart ({count})
+    </button>
+    <button className="btn btn-secondary">Login</button>
+    <button className="btn btn-secondary">Sign Up</button>  
+    </div>
 </div>
 
         </>
